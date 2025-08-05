@@ -20,87 +20,84 @@ import LayoutPanel from '../components/Layout/LayoutPanel';
 import Dashboard from '../pages/Dashboard';
 
 const Routes: React.FC = () => (
-    <RoutesDOM>
-        <Route path="/" element={<LayoutPanel component={<LoginPage />} />} />
-        <Route
-            path="/login"
-            element={<LayoutPanel component={<LoginPage />} />}
-        />
-        <Route
-            path="/dashboard"
-            element={<LayoutPanel component={<Dashboard />} />}
-        />
+  <RoutesDOM>
+    <Route path="/" element={<LayoutPanel component={<LoginPage />} />} />
+    <Route path="/login" element={<LayoutPanel component={<LoginPage />} />} />
+    <Route
+      path="/dashboard"
+      element={<LayoutPanel component={<Dashboard />} />}
+    />
 
-        <Route
-            path="/revendedores"
-            element={<LayoutPanel component={<DealersListPage />} />}
-        />
+    <Route
+      path="/revendedores"
+      element={<LayoutPanel component={<DealersListPage />} />}
+    />
 
-        <Route
-            path="/revendedores/novo"
-            element={<LayoutPanel component={<ResselerRegisterPage />} />}
-        />
+    <Route
+      path="/revendedores/novo"
+      element={<LayoutPanel component={<ResselerRegisterPage />} />}
+    />
 
-        <Route
-            path="/revendedores/atualizar/:id"
-            element={<LayoutPanel component={<DealerEditPage />} />}
-        />
+    <Route
+      path="/revendedores/atualizar/:id"
+      element={<LayoutPanel component={<DealerEditPage />} />}
+    />
 
-        <Route
-            path="/produtos"
-            element={<LayoutPanel component={<ProductsListPage />} />}
-        />
+    <Route
+      path="/produtos"
+      element={<LayoutPanel component={<ProductsListPage />} />}
+    />
 
-        <Route
-            path="/produtos/novo"
-            element={<LayoutPanel component={<ProductsRegisterPage />} />}
-        />
+    <Route
+      path="/produtos/novo"
+      element={<LayoutPanel component={<ProductsRegisterPage />} />}
+    />
 
-        <Route
-            path="/produtos/atualizar/:id"
-            element={<LayoutPanel component={<ProductsEditPage />} />}
-        />
+    <Route
+      path="/produtos/atualizar/:id"
+      element={<LayoutPanel component={<ProductsEditPage />} />}
+    />
 
-        <Route
-            path="/perguntas-e-respostas"
-            element={<LayoutPanel component={<QuestionsListPage />} />}
-        />
+    <Route
+      path="/perguntas-e-respostas"
+      element={<LayoutPanel component={<QuestionsListPage />} />}
+    />
 
-        <Route
-            path="/perguntas-e-respostas/novo"
-            element={<LayoutPanel component={<QuestionsRegisterPage />} />}
-        />
+    <Route
+      path="/perguntas-e-respostas/novo"
+      element={<LayoutPanel component={<QuestionsRegisterPage />} />}
+    />
 
-        <Route
-            path="/perguntas-e-respostas/atualizar/:id"
-            element={<LayoutPanel component={<QuestionsEditPage />} />}
-        />
+    <Route
+      path="/perguntas-e-respostas/atualizar/:id"
+      element={<LayoutPanel component={<QuestionsEditPage />} />}
+    />
 
-        <Route
-            path="/vendas"
-            element={<LayoutPanel component={<OrdersListPage />} />}
-        />
+    <Route
+      path="/vendas"
+      element={<LayoutPanel component={<OrdersListPage />} />}
+    />
 
-        <Route
-            path="/vendas/:id/visualizar"
-            element={<LayoutPanel component={<ViewOrderPage />} />}
-        />
+    <Route
+      path="/vendas/:id/visualizar"
+      element={<LayoutPanel component={<ViewOrderPage />} />}
+    />
 
-        <Route
-            path="/usuarios"
-            element={<LayoutPanel component={<UserListPage />} />}
-        />
+    <Route
+      path="/usuarios"
+      element={<LayoutPanel component={<UserListPage />} />}
+    />
 
-        <Route
-            path="/usuarios/novo"
-            element={<LayoutPanel component={<UserRegisterPage />} />}
-        />
+    <Route
+      path="/usuarios/novo"
+      element={<LayoutPanel component={<UserRegisterPage />} />}
+    />
 
-        <Route
-            path="/usuarios/atualizar/:id"
-            element={<LayoutPanel component={<UserEditPage />} />}
-        />
-    </RoutesDOM>
+    <Route
+      path="/usuarios/atualizar/:id"
+      element={<LayoutPanel component={<UserEditPage />} />}
+    />
+  </RoutesDOM>
 );
 
 export default Routes;
